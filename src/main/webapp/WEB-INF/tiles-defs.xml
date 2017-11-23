@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE tiles-definitions PUBLIC
+       "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN"
+       "http://tiles.apache.org/dtds/tiles-config_3_0.dtd">
+
+<tiles-definitions>
+
+  <definition name="baseLayout" template="/WEB-INF/tiles/baseLayout.jsp">
+      <put-attribute name="title"  value="Template"/>
+      <put-attribute name="header" value="/WEB-INF/tiles/header.jsp"/>
+      <put-attribute name="menu"   value="/WEB-INF/tiles/menu.jsp"/>
+      <put-attribute name="body"   value="/WEB-INF/tiles/body.jsp"/>
+      <put-attribute name="footer"   value="/WEB-INF/tiles/footer.jsp"/>
+  </definition>
+  
+  <definition name="welcome" extends="baseLayout">
+      <put-attribute name="title"  value="Welcome"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/welcome.jsp"/>      
+  </definition>
+  
+  <definition name="role" extends="baseLayout">
+      <put-attribute name="title"  value="Role"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/role.jsp"/>      
+  </definition>
+  
+  <definition name="module" extends="baseLayout">
+      <put-attribute name="title"  value="Module"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/module.jsp"/>      
+  </definition>
+  
+  <definition name="action" extends="baseLayout">
+      <put-attribute name="title"  value="Action"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/action.jsp"/>      
+  </definition>
+  
+  <definition name="category" extends="baseLayout">
+      <put-attribute name="title"  value="Category"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/category.jsp"/>      
+  </definition>
+  
+   <definition name="zone" extends="baseLayout">
+      <put-attribute name="title"  value="Zone"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/zone.jsp"/>      
+  </definition>
+  
+   <definition name="usertype" extends="baseLayout">
+      <put-attribute name="title"  value="Usertype"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/usertype.jsp"/>      
+  </definition>
+  
+   <definition name="employee" extends="baseLayout">
+      <put-attribute name="title"  value="employee"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/employee.jsp"/>      
+  </definition>
+  
+  <definition name="location" extends="baseLayout">
+      <put-attribute name="title"  value="Location"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/location.jsp"/>      
+  </definition>
+  
+  
+   <definition name="pagepermissions" extends="baseLayout">
+      <put-attribute name="title"  value="Pagepermissions"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/pagepermissions.jsp"/>      
+  </definition>
+  
+  <definition name="location-ip" extends="baseLayout">
+      <put-attribute name="title"  value="Location-ip"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/location-ip.jsp"/>      
+  </definition>
+  
+    <definition name="device" extends="baseLayout">
+      <put-attribute name="title"  value="device"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/device.jsp"/>      
+  </definition>
+  
+   <definition name="earthpits" extends="baseLayout">
+      <put-attribute name="title"  value="Earthpits"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/earthpits.jsp"/>      
+  </definition>
+  
+    <definition name="escalation" extends="baseLayout">
+      <put-attribute name="title"  value="Escalation"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/escalation.jsp"/>      
+  </definition> 
+  
+   <definition name="device-earthpit" extends="baseLayout">
+      <put-attribute name="title"  value="Device-earthpit"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/device-earthpit.jsp"/>      
+  </definition>  
+  
+  <definition name="alertgroups" extends="baseLayout">
+      <put-attribute name="title"  value="Alertgroups"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/alertgroups.jsp"/>      
+  </definition>
+  
+  <definition name="homeadmin" extends="baseLayout">
+      <put-attribute name="title"  value="page"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/homeadmin.jsp"/>      
+  </definition>
+  
+  <definition name="dashboard" extends="baseLayout">
+      <put-attribute name="title"  value="Dashboard"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/dashboard.jsp"/>      
+  </definition>
+  
+  <definition name="earthpit" extends="baseLayout">
+      <put-attribute name="title"  value="Earthpit"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/earthpit.jsp"/>      
+  </definition>
+  
+  <definition name="alert" extends="baseLayout">
+      <put-attribute name="title"  value="Alert"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/alert.jsp"/>      
+  </definition>
+  
+  <definition name="configuration" extends="baseLayout">
+      <put-attribute name="title"  value="Configuration"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/configuration.jsp"/>      
+  </definition>
+  <definition name="unauthorized" extends="baseLayout">
+      <put-attribute name="title"  value="Unauthorized"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/unauthorized.jsp"/>      
+  </definition>  
+  
+<definition name="errorPage" extends="baseLayout">
+      <put-attribute name="title"  value="ErrorPage"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/errorPage.jsp"/>      
+  </definition>
+  
+  <definition name="menu" extends="baseLayout">
+      <put-attribute name="title"  value="Menu"/>
+      <put-attribute name="body"   value="/WEB-INF/jsp/menu.jsp"/>      
+  </definition>
+</tiles-definitions>

@@ -1,0 +1,62 @@
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans
+	http://www.springframework.org/schema/beans/spring-beans-3.0.xsd">
+    
+   
+<!-- HPCL v2.1 Enhancement Connection -->    
+  <!--<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://localhost:3306/epmsdb_v2" />
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+	</bean>   --> 
+
+
+
+<!-- HPCL v2.0 Enhancement Testing Environment -->
+<bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://10.90.9.244:3306/epmsdb_v2" />		
+		<property name="username" value="root" />
+		<property name="password" value="Root" />
+	</bean> 
+
+<!-- HPCL v2.0 Production Live Connection -->
+ <!-- <bean id="dataSource" class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+		<property name="driverClassName" value="com.mysql.jdbc.Driver" />
+		<property name="url" value="jdbc:mysql://10.90.124.168:3306/EPMSDB" />		
+		<property name="username" value="root" />
+		<property name="password" value="root" />
+
+	</bean> -->
+	
+	
+	 
+     <!-- Connection properties for Oracle -->
+     
+ 	<!--  <bean id="dataSource"
+		class="org.springframework.jdbc.datasource.DriverManagerDataSource">
+        <property name="driverClassName" value="oracle.jdbc.driver.OracleDriver" />
+		<property name="url" value="jdbc:oracle:thin:@192.168.0.66:1555:hpcl" />
+		<property name="username" value="hpcladmin" />
+		<property name="password" value="hpcladmin"/>
+	</bean>  -->  
+	
+<bean id="dmc" class="com.hpcl.dao.DynamicMenusDaoImpl">  
+<property name="jdbcTemplate" ref="dataSource"></property>  
+</bean>
+<bean id="twoFields" class="com.hpcl.dao.AdministrationDaoImpl">  
+<property name="jdbcTemplate" ref="dataSource"></property>  
+</bean>
+<bean id="threeFields" class="com.hpcl.dao.ConfigurationDaoImpl">  
+<property name="jdbcTemplate" ref="dataSource"></property>  
+</bean>
+<bean id="rolePermissions" class="com.hpcl.dao.RolePerimissionTablesDataDaoImpl">  
+<property name="jdbcTemplate" ref="dataSource"></property>  
+</bean>
+<bean id="socket" class="com.hpcl.dao.SocketDaoImpl">  
+<property name="jdbcTemplate" ref="dataSource"></property>  
+</bean>
+
+</beans>

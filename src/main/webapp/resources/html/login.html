@@ -1,0 +1,95 @@
+﻿<!--
+Author		:	Kshamashree
+creation Date	:	30-09-2015
+Descripition	:	HPCL EMS application login page for accessing the application.
+Modified Date	:
+Modified By	:
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Main</title>
+    <!-- Bootstrap Core CSS -->
+    
+    <link href="/resources/css/bootstrap.min.css" />
+     <!-- Custom Fonts -->
+    <link href=" /resources/css/font-awesome.min.css" />
+    <!-- Custom CSS -->
+    <link href="/resources/css/hpcl-design.css" />
+    <link href="/resources/css/jquery.bdt.css" />
+    <link href="/resources/css/font-awesome.min.css" />
+	    <link href="http://www.jqueryscript.net/css/jquerysctipttop.css">
+	
+	<!-- jQuery -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color:#D5D5D5">
+     <div id="divEMSHeader" class="row logo-header" style="background-color: #0B67B2;">
+            <div id="divHPCLLogo" class="col-md-2 col-sm-2">
+                <img id ="imgHPCLLogo" style="margin-top:9px" class="img-responsive center-block" src="../images/hplogo.jpg" alt="HP">
+            </div>
+            <div id ="divHeaderText" class="col-md-8 col-sm-8">
+                <h1 id="HeaderText" class="page-header text-center" style="color: white;">EARTH PIT MONITORING SYSTEM</h1>
+            </div>
+            <div id="divEMSLogo" class="col-md-2 col-sm-2">
+                <img id ="imgEMSLogo" style="margin-top:9px" class="img-responsive center-block" src="../images/hpcl-right-logo.png" alt="HP">
+            </div>
+    </div>
+    
+     <div id="divEMSBody" class="container login-body">
+        <div class="row ">
+                <div id="divResponsive" class="col-md-4 col-md-offset-4">
+                      <div id="divLoginPanel" class="login-panel panel panel-default">
+                            <div id="divLoginPanelHeader" class="panel-heading">
+                                <h3 class="panel-title">User Login</h3>
+                            </div>
+                            <div class="panel-body">
+                                <form role="form">
+                                    <fieldset>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus>
+                                        </div>
+                                        <div class="form-group">
+                                            <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                        </div>
+                                        <div class="checkbox">
+                                            <label>
+                                                <input name="remember" type="checkbox" value="Remember Me">Remember Me
+                                                 
+                                            </label>
+                                            <label>
+                                                 <a href="#" class="">forgot password</a>
+                                            </label>
+                                        </div>
+                                        <!-- Change this to a button or input when using this as a form -->
+                                        <a href="#" class="btn btn-sm btn-success btn-block login-button">Login</a>
+                                    </fieldset>
+                                </form>
+                            </div>
+                      </div>
+                </div>
+        </div>
+    </div>
+   <!-- Footer -->
+ 
+  <footer>	
+		<!--<div class="container">-->
+			<div id="divEMSFooter" class="row">
+				<div class="col-md-12">
+					<p class="copyright">Copyright © 2015 / All rights reserved.</p>
+				</div>
+				
+			</div>
+		<!--</div>-->
+ </footer>
+   
+</body>
+</html>
